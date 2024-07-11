@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Color-Changer</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#" class="active">Color Changer Scheme</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="canvas">
+      <h2>
+        Try clicking on one of the colors above
+        <span>to change the background color of this page</span>
+      </h2>
+      <span class="button" id="purple"></span>
+      <span class="button" id="green"></span>
+      <span class="button" id="blue"></span>
+      <span class="button" id="red"></span>
+      <span class="button" id="lightpink"></span>
+      <span class="button" id="grey"></span>
+      <span class="button" id="skyblue"></span>
+      <span class="button" id="lightseagreen"></span>
+      <span class="button" id="lightgreen"></span>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
